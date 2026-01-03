@@ -18,7 +18,7 @@ export default function Home() {
       <WhatYouGet />
       <ProcessSection />
       <PricingSection />
-      <ContactForm />
+      <ContactForm showPackageField={false} />
       <Footer />
     </main>
   )

@@ -1,5 +1,9 @@
+"use client"
+
+import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Check } from "lucide-react"
+import { ContactForm } from "@/components/contact-form"
 
 const packages = [
   {
@@ -34,6 +38,18 @@ const packages = [
 ]
 
 export function PricingSection() {
+  const [selectedPackage, setSelectedPackage] = useState("")
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const openModal = (pkgName) => {
+    setSelectedPackage(pkgName)
+    setIsModalOpen(true)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
+
   return (
     <section id="pricing" className="py-12 sm:py-24 px-4 sm:px-6 lg:px-8 bg-secondary/50">
       <div className="max-w-6xl mx-auto">
@@ -83,13 +99,44 @@ export function PricingSection() {
                   </li>
                 ))}
               </ul>
-              <Button className="w-full tracking-wide text-sm" variant={pkg.popular ? "default" : "outline"} asChild>
-                <a href="#contact">Get Started</a>
+              <Button
+                className="w-full tracking-wide text-sm"
+                variant={pkg.popular ? "default" : "outline"}
+                onClick={() => openModal(pkg.name)}
+              >
+                Get Started
               </Button>
             </div>
           ))}
         </div>
       </div>
+
+      {isModalOpen ? (
+        <div
+          className="fixed inset-0 z-50 bg-background/80 backdrop-blur-sm flex items-center justify-center px-4 py-10"
+          onClick={closeModal}
+        >
+          <div
+            className="w-full max-w-2xl bg-background rounded-2xl border border-border shadow-2xl p-6 sm:p-8 relative"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              onClick={closeModal}
+              className="absolute top-4 right-4 text-sm text-muted-foreground hover:text-foreground"
+            >
+              Close
+            </button>
+            <ContactForm
+              embedded
+              selectedPackage={selectedPackage}
+              showPackageField={true}
+              title={`Get Started: ${selectedPackage}`}
+              subtitle="Tell us a bit about your project and we’ll follow up within 24 hours."
+            />
+          </div>
+        </div>
+      ) : null}
     </section>
   )
 }
