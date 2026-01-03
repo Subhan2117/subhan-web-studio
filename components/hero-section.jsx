@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, CheckCircle2 } from "lucide-react"
 import { Hero3D } from "@/components/hero-3d"
 
 export function HeroSection() {
@@ -43,11 +43,18 @@ export function HeroSection() {
           </div>
 
           <div className="mt-6 sm:mt-14 hidden sm:flex flex-wrap items-center justify-center gap-x-8 gap-y-3 text-sm text-muted-foreground">
-            <span>3-5 Day Delivery</span>
-            <span className="text-border">|</span>
-            <span>Mobile-First Design</span>
-            <span className="text-border">|</span>
-            <span>SEO Optimized</span>
+            <span className="inline-flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+              3-5 Day Delivery
+            </span>
+            <span className="inline-flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+              Mobile-First Design
+            </span>
+            <span className="inline-flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4 text-emerald-500" />
+              SEO Optimized
+            </span>
           </div>
         </div>
 
