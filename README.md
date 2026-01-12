@@ -1,10 +1,10 @@
-# Subhan Web Studio
+# Lumet Studio
 
-Subhan Web Studio is a modern, high-converting landing page built to help local businesses get more customers through fast, mobile-friendly websites. It is designed for clarity, trust, and conversion.
+Lumet Studio is a modern, high-converting landing page built to help local businesses get more customers through fast, mobile-friendly websites. It is designed for clarity, trust, and conversion.
 
 ## Project Overview
 
-Subhan Web Studio is a freelance web studio landing page focused on local businesses. The goal is to present services clearly, build trust quickly, and drive visitors to request a quote or audit.
+Lumet Studio is a freelance web studio landing page focused on local businesses. The goal is to present services clearly, build trust quickly, and drive visitors to request a quote or audit.
 
 ## Live Demo
 
@@ -40,7 +40,7 @@ pnpm dev
 
 ## Purpose of This Repository
 
-This repository is the codebase for a freelance web studio landing page used for outreach, ads, and real client acquisition. It is intended to support the Subhan Web Studio brand and client-facing marketing.
+This repository is the codebase for a freelance web studio landing page used for outreach, ads, and real client acquisition. It is intended to support the Lumet Studio brand and client-facing marketing.
 
 ## License / Usage Note
 

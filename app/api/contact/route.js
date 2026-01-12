@@ -18,10 +18,10 @@ export async function POST(request) {
     }
 
     const payload = {
-      from: "Subhan Web Studio <onboarding@resend.dev>",
+      from: "Lumet Studio <onboarding@resend.dev>",
       to: TO_EMAIL,
       reply_to: email.trim(),
-      subject: `New Subhan Web Studio inquiry from ${name.trim()}`,
+      subject: `New Lumet Studio inquiry from ${name.trim()}`,
       html: `
         <div style="font-family: Arial, sans-serif; line-height: 1.6;">
           <p><strong>Name:</strong> ${escapeHtml(name)}</p>

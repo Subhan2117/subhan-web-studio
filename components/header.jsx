@@ -13,7 +13,7 @@ export function Header() {
         <div className="flex items-center justify-between h-18">
           <div className="flex items-center gap-2">
             <span className="text-xl font-bold tracking-tight text-foreground">
-              Subhan Web Studio
+              Lumet Studio
             </span>
           </div>
 
