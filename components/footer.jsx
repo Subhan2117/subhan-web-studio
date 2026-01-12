@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-16">
           <div>
             <span className="font-serif text-xl tracking-tight text-background">
-              Lumet Studio
+              PixelAlch Studio
             </span>
             <p className="mt-4 text-background/60 text-sm leading-relaxed">
               We help local businesses get more customers with modern,
@@ -77,7 +77,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-background/10 text-center text-background/40 text-sm">
-          © {new Date().getFullYear()} Lumet Studio. All rights reserved.
+          © {new Date().getFullYear()} PixelAlch Studio. All rights reserved.
         </div>
       </div>
     </footer>
